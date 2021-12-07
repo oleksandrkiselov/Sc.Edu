@@ -136,6 +136,7 @@
     <Content Include="App_Config\Include\Project\SiteDefinition.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\Site.css" />
     <Content Include="lib\flaticon\font\Flaticon.eot" />
     <Content Include="lib\flaticon\font\Flaticon.ttf" />
     <Content Include="lib\flaticon\font\Flaticon.woff" />
@@ -231,10 +232,13 @@
     <Content Include="lib\wow\wow.min.js" />
     <Content Include="Views\BasicLayout.cshtml" />
     <Content Include="Views\PageHeader\PageHeader.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
     <None Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
+    <Compile Include="Models\AboutViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -249,8 +253,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
