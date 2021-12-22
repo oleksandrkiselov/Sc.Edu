@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Web.Mvc;
 using Sc.Edu.Web.Models;
 using Sitecore.Data.Fields;
@@ -18,10 +19,14 @@ namespace Sc.Edu.Web.Controllers
 
             MultilistField slidesField = dataSource.Fields["Slides"];
 
+            var slideCountParam = RenderingContext.Current?.Rendering.Parameters["SlideCount"];
+            int.TryParse(slideCountParam, out int result);
+            int slideCount = result == 0 ? 2 : result;
+
             if (slidesField.Count > 0)
             {
                 var slideItems = slidesField.GetItems();
-                foreach (var slideItem in slideItems)
+                foreach (var slideItem in slideItems.Take(slideCount))
                 {
                     var titleField = slideItem.Fields["Title"];
                     var title = titleField.Value;
