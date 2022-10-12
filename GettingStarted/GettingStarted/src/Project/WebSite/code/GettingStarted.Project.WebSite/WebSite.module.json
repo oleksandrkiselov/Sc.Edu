@@ -1,0 +1,11 @@
+{
+    "namespace": "WebSite",
+    "items": {
+        "includes": [
+            {
+                "name": "Website include",
+                "path": "/sitecore/templates/Project/Website"
+            }
+        ]
+    }
+}
