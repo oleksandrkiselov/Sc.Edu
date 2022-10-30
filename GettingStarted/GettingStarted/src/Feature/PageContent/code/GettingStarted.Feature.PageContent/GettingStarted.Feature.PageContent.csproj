@@ -356,6 +356,7 @@
     <None Include="Properties\PublishProfiles\Debug.pubxml" />
     <None Include="Properties\PublishProfiles\Docker.pubxml" />
     <Content Include="Views\PageContent\BodyCopy.cshtml" />
+    <Content Include="Views\PageContent\HeroImage.cshtml" />
     <None Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
