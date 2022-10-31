@@ -1,0 +1,67 @@
+﻿---
+ID: "87db0700-04b0-457b-8bcd-f5cfb5bb1d0b"
+Parent: "110d559f-dea5-42ea-9c1c-8a5df7e70ef9"
+Template: "1c52f786-e7c5-4a90-8e51-8c35b485e2bc"
+Path: /sitecore/content/Home/GettingStarted
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221005T180211Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3d2ac4d4-1c1a-4391-b304-79f729c4f13b"
+    - ID: "8cfe9dcf-c44f-4513-9b03-a3b88a9b8ee6"
+      Hint: Body Copy
+      Value: |
+        <h2>Configuring a Development Environment for Sitecore</h2>
+        <ul>
+            <li>Windows Operating System</li>
+            <li>Visual Studio 2019</li>
+            <li>SQL Server 2017</li>
+            <li>Solr 7.5</li>
+        </ul>
+        <h2>Installing Sitecore</h2>
+        <ul>
+            <li>dev.sitecore.net - Installation files</li>
+            <li>Developer Trial License</li>
+            <li>Sitecore Install Assistant (SIA)</li>
+            <li>Sitecore Installation Framework (SIF)</li>
+            <li>IIS websites, file system, SQL Databases, and Solr Server</li>
+            <li>Back up working websites frequently</li>
+        </ul>
+        <h2>Setting Up a Sitecore MVC Visual Studio Project Using Helix</h2>
+        <ul>
+            <li>3 Layers: Project, Feature, Foundation</li>
+            <li>Project Layer - Presentation</li>
+            <li>Feature Layer - Components and Functionality</li>
+            <li>Foundation Layer - Core Functionality</li>
+        </ul>
+        <h2>Working with Sitecore Layouts, Renderings, and Data Templates</h2>
+        <ul>
+            <li>Layout - Presentation</li>
+            <li>Data Template - Content</li>
+            <li>Page Type Template - Content &amp; Presentation</li>
+            <li>Placeholder - Location</li>
+        </ul>
+        <h2>Studying Sitecore</h2>
+        <ul>
+            <li>Sitecore.chat</li>
+            <li>Sitecore.stackexchange.com</li>
+            <li>Dev.sitecore.net</li>
+            <li>Future Sitecore Courses on Pluralsight!</li>
+        </ul>
+        <p>For further information, please go to the <a rel="noopener noreferrer" href="https://doc.sitecore.net/" target="_blank" title="Sitecore Documentation site">Sitecore Documentation site</a></p>
+    - ID: "a867c205-0cb1-41b5-92b0-bfb2886d704a"
+      Hint: Title
+      Value: GettingStarted
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221005T224323Z

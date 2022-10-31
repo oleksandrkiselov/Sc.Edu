@@ -1,0 +1,15 @@
+{
+    "namespace": "Project",
+    "items": {
+        "includes": [
+            {
+                "name": "Project include",
+                "path": "/sitecore/templates/Project/Website"
+            },
+            {
+                "name": "Content Website include",
+                "path": "/sitecore/content"
+            }
+        ]
+    }
+}

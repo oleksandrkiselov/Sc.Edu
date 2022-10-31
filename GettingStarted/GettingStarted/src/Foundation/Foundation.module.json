@@ -1,0 +1,11 @@
+{
+    "namespace": "Foundation",
+    "items": {
+        "includes": [
+            {
+                "name": "Foundation.MediaLibrary include",
+                "path": "/sitecore/media library/Images"
+            }
+        ]
+    }
+}

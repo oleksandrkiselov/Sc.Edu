@@ -1,0 +1,15 @@
+{
+    "namespace": "Feature",
+    "items": {
+        "includes": [
+            {
+                "name": "Feature include",
+                "path": "/sitecore/templates/Feature"
+            },
+            {
+                "name": "Feature.Renderings include",
+                "path": "/sitecore/layout/Renderings/Feature"
+            }
+        ]
+    }
+}

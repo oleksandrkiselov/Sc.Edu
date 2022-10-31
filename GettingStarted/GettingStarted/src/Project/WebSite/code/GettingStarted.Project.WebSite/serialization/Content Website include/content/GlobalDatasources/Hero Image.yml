@@ -1,0 +1,39 @@
+﻿---
+ID: "29352663-1942-485d-87ea-ee17df25b8e0"
+Parent: "899f0aad-9e44-42ae-af2e-4e4c05f841de"
+Template: "5c5e20cf-a1a7-4d68-b7d6-05f07b75613d"
+Path: /sitecore/content/GlobalDatasources/Hero Image
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20221030T230030Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\Admin
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "895a7b7d-8e12-4189-bed5-2172852edb77"
+      Hint: Hero Image
+      Value: |
+        <image mediaid="{303ADCEF-4D20-4097-B372-FF888B7FAFF9}" />
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "23b6e9db-afbf-4e3d-8663-b2c4bbd45a4e"
+    - ID: "9829c694-0f99-4c0d-8c76-11506be0c12a"
+      Hint: Hero Logo
+      Value: |
+        <image mediaid="{CA122E85-BEB0-402C-82A1-3BF01F92F590}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\Admin
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20221030T230650Z
