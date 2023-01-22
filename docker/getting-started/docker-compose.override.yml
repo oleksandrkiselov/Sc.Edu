@@ -1,0 +1,15 @@
+version: "2.4"
+
+services:
+
+  cm:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-xp0-cm:${VERSION:-latest}
+    build:
+      context: ./docker/build/cm
+      args:
+        BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xp0-cm:${SITECORE_VERSION}
+        TOOLING_IMAGE: ${SITECORE_TOOLS_REGISTRY}sitecore-docker-tools-assets:${TOOLS_VERSION}
+    volumes:
+      - ${LOCAL_DEPLOY_PATH}:C:\deploy
+      - ${LOCAL_DATA_PATH}\cm:C:\inetpub\wwwroot\App_Data\logs
+    entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1"
