@@ -2,6 +2,16 @@ version: "2.4"
 
 services:
 
+  solution:
+    image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    build:
+      context: ../
+      args:
+        BASE_IMAGE: ${SOLUTION_BASE_IMAGE}
+        BUILD_IMAGE: ${SOLUTION_BUILD_IMAGE}
+        BUILD_CONFIGURATION: ${BUILD_CONFIGURATION}
+    scale: 0
+
   traefik:
     command:
       - "--ping"
@@ -48,14 +58,17 @@ services:
         BASE_IMAGE: ${SITECORE_DOCKER_REGISTRY}sitecore-xm1-cm:${SITECORE_VERSION}
         SPE_IMAGE: ${SITECORE_MODULE_REGISTRY}spe-assets:${SPE_VERSION}
         TOOLING_IMAGE: ${SITECORE_TOOLS_REGISTRY}sitecore-docker-tools-assets:${TOOLS_VERSION}
+        image: ${REGISTRY}${COMPOSE_PROJECT_NAME}-solution:${VERSION:-latest}
+    depends_on:
+      - solution
     environment: 
-      SITECORE_LICENSE_LOCATION: C:\license\license.xml
+      SITECORE_LICENSE_LOCATION: C:\\license\\license.xml
       SITECORE_DEVELOPMENT_PATCHES: DevEnvOn,CustomErrorsOff,DebugOn,DiagnosticsOff,InitMessagesOff,RobotDetectionOff
     volumes:
       - .\data\cm\website:C:\deploy
       - .\data\cm\logs:C:\inetpub\wwwroot\App_Data\logs
       - ${LICENSE_PATH}:C:\license
-    entrypoint: powershell -Command "& C:\tools\entrypoints\iis\Development.ps1"
+    entrypoint: powershell -Command "& C:\\tools\\entrypoints\\iis\\Development.ps1"
     mem_limit: ${MEM_LIMIT_CM:-4GB}
     restart: always
     labels:
